@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [nopCommerce]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.nopCommerce.utilities.Reporting"/>
+  </listeners>
+  <test name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.nopCommerce.testCases.TC_AddCustomerTest_003">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="addNewCustomer"/>
+        </methods>
+      </class> <!-- com.nopCommerce.testCases.TC_AddCustomerTest_003 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [nopCommerce] -->
